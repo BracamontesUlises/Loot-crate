@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <!--link rel="stylesheet" href="css/swiper-bundle.min.css"-->
+        <link rel="stylesheet" href="css/style3.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <script type="module" src="js/firebaseconect.js"></script>
+        <script type="module" src="js/login.js"></script>
+    </head>
+
+    <body>
+        <!--header>
+            <div class="nav-bar">
+                <a href="" class="logo">BOXCRATE</a>
+                <div class="navigation">
+                    <div class="nav-items">
+                        <i class="uil uil-items nav-close-btn"></i>
+                        <a href="index.html"><i class="uil uil-home">Inicio</i></a>
+                        <a href="cajas.html"><i class="uil uil-compass">Cajas</i></a>
+                        <a href="info.html"><i class="uil uil-info-circle">Informacion</i></a>
+                        <a href="registro.html"><i>Login</i></a>
+                        <a href="dino.html" target="_blank"><i>Videojuego</i></a>
+                    </div>
+                </div>
+                <i class="uil uil-apps nav-menu-btn"></i>
+            </div>
+        </header-->
+
+        <section class="formulario-iniciosesion">
+            <h1>¡Bienvenido de nuevo!</h1>
+              <form id="formulario-sesion">
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email"><br><br>
+                  
+                  <label for="password">Contraseña:</label>
+                  <input type="password" id="password" name="password"><br><br>
+                  
+                  <input type="submit" id="btn-login" value="Iniciar sesión">
+              </form>
+            <a href="singup.html">Crear una nueva cuenta</a>
+          </section>
+          <head>
+            <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdRfxsnAAAAAEvN0Q7jKGdDWTvp1GIrDeNToSXU"></script>
+            ...
+            </head>
+            
+            <script>
+            function onClick(e) {
+              e.preventDefault();
+              grecaptcha.enterprise.ready(async () => {
+                const token = await grecaptcha.enterprise.execute('6LdRfxsnAAAAAEvN0Q7jKGdDWTvp1GIrDeNToSXU', {action: 'LOGIN'});
+                // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+                // reCAPTCHA Enterprise to the end user's browser.
+                // This token must be validated by creating an assessment.
+                // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+              });
+            }
+            </script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

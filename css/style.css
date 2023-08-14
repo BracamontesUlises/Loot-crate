@@ -1,0 +1,170 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+  background-color: #0a0a0a; /* Fondo claro */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding: 150px 0 50px 0;
+}
+
+.swiper-slide {
+  width: 90%;
+  height: auto;
+  max-width: 500px;
+  background-color: #222222; /* Fondo claro */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-img img {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 13px 55px;
+  border: 1px solid #ffb900;
+  border-radius: 25px;
+  color: #ffb900;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.icons i {
+  font-size: 20px;
+  color: #ffb900;
+}
+
+.icons img {
+  width: 120px;
+}
+
+.product-txt {
+  text-align: left;
+}
+
+.product-txt span {
+  font-size: 25px;
+  color: #ffb900;
+  font-weight: bold;
+}
+
+.product-txt h3 {
+  font-size: 30px;
+  color: #ffb900;
+  text-transform: uppercase;
+}
+
+.product-txt p {
+  font-size: 20px;
+  color: #ffb900;
+}
+
+.swiper-slide:hover {
+  background-color: #e0e0e0; /* Fondo claro al pasar el mouse */
+}
+
+.fondo{
+  background-image: url("bio.jpg");
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el fondo completamente */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.fondo4{
+  background-image: url("marvel.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.fondo3{
+  background-image: url("pelicula.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.fondo2{
+  background-image: url("manga.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+header {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: calc(5rem + 1rem);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s ease;
+  transition-property: height, background;
+  background: #000000; /* Color de fondo blanco */
+}
+
+header.sticky {
+  height: calc(2.5rem + 1rem);
+  background: #000000; /* Color de fondo blanco */
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid #ffffff; /* Borde inferior blanco */
+}
+
+header .nav-bar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 200px;
+  transition: 0.3s ease;
+}
+
+.nav-bar .logo {
+  color: #ffffff; /* Color del texto en blanco */
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra de texto en blanco */
+}
+
+.navigation .nav-items a {
+  color: #ffffff; /* Color del texto en blanco */
+  font-size: 1em;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra de texto en blanco */
+}
+
+.navigation .nav-items a:not(:last-child) {
+  margin-right: 45px;
+}
+
